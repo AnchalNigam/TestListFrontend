@@ -1,0 +1,156 @@
+/* navbar start */
+.navbar-custom {
+    background-color:#123D6A;
+   
+}
+#font-adjust{
+	font-family:garamond;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+   
+
+}
+/* navbar end */
+
+/* main body design */
+.color-box-1{
+    background-color:#EDE2DC;
+    margin-top:1.8vmax;
+    min-height:50px;
+    box-shadow: 10px 10px 5px #123D6A;
+    border:2px solid #123D6A;
+}
+
+.sub-heading{
+    color:#123D6A;
+    font-size:26px;
+    font-family:garamond;
+    font-weight:bold;
+}
+.cursorPointer{
+    cursor:pointer;
+    list-style:none;
+ 
+}
+/* right side bar design */
+.box-img{
+    opacity:0.5;
+   
+    
+}
+.text-style{
+    font-size:4vmin;
+    position:absolute;
+    left:35%;
+    top:70%;
+    
+    
+    color:#557A95;
+  
+  }
+  /* center box style */
+.color-box-2{
+   
+    margin-top:1.8vmax;
+    min-height:50px;
+    
+    border:2px dashed #AB3B61;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    padding-left:14px;
+    padding-top:20px;
+    border-radius: 5px;
+    background-color:#EDE2DC;
+  }
+
+  /* item addition area */
+  .item-history {
+    padding: 2em 2em 1.42em;
+    overflow-y: scroll;
+    height: 80vh;
+  }
+  @media only screen and (max-width:575px) {
+   .item-history {
+      height:50vh;
+    }
+  }
+  @media only screen and (min-width:576px) and (max-width:768px) {
+    .item-history{
+      height:50vh;
+    }
+  }
+  @media only screen and (min-width:769px) and (max-width:992px) {
+    .item-history {
+      height:65vh;
+    }
+  }
+  @media only screen and (min-width:993px) and (max-width:1200  px) {
+    .item-history{
+      height:50vh;
+    }
+  }
+
+  .align-right {
+    text-align: right;
+  }
+
+  .floatLeft {
+    float: left;
+  }
+  .item-history .message {
+    width: 100%;
+    border-color:black;
+    border-radius: 7px;
+    background-color:#EDE2DC;
+    color:#AB3B61;
+    padding: 0.5em 1.42em;
+    line-height: 1.9em;
+    font-size: 1.1em;
+    margin-bottom: 2em;
+    box-shadow:10px 10px 5 px black;
+  }
+  
+  
+
+  .crop {
+    border-radius: 100%;
+    line-height: 2vmin;
+    padding: 3vmin;
+    text-align: center;
+    margin: 0em;
+    width: 8vmin;
+    height: 8vmin;
+    float: left;
+    text-transform: uppercase;
+    background-color:#009D63;
+    font-size:3vmin;
+  
+  }
+  
+  .about {
+    float: left;
+    padding-left: 0.4em;
+    width:70%;
+  }
+  
+  .name {
+    float: left;
+    
+    font-size:3.1vmin;
+    font-family:garamond;
+    font-weight:bold;
+    margin-top:1.5vmin
+  }
+  
+  #box{
+  padding-bottom:10vmin;
+  cursor: pointer;
+   
+  }
+  .activeList{
+      background-color:#d3d3d3;
+  }

@@ -1,0 +1,48 @@
+<!-- navbar start -->
+
+<nav class="navbar navbar-custom navbar-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" id="font-adjust" [routerLink]="['/']">GTList
+    </a>
+
+  </div>
+</nav>
+<br/>
+<br/>
+<!-- navbar end -->
+<div class="container color-box">
+  <div class="row mt-3">
+    <div class="col-12 text-center">
+      <h1 class="heading">Create To-Do-List</h1>
+    </div>
+
+  </div>
+  <div class="row mt-3 p-3">
+    <div class="col-12">
+        <form #create="ngForm" (ngSubmit)="createList();create.reset()">
+            <span class="sub-heading">To-Do-List Name</span>
+            <label for="inputName" class="sr-only">List Name</label>
+
+            <input type="email" #list="ngModel" pattern="^[A-Z][A-za-z ]+$" minlength="2"  name="list" id="inputName" class="form-control" [(ngModel)]="listName" placeholder="To-Do-List Name"
+                required autofocus>
+
+            <br>
+            <div [hidden]="list.pristine || list.valid" class="alert alert-danger">
+                <div *ngIf="list.errors?.pattern">
+                 ** List name should only start with Capital and contain only letters !
+                  <div *ngIf="list.errors?.minlength">
+                   ** List Name should contain minimum 2 letters!
+                  </div>
+                </div>
+                <div *ngIf="list.errors?.required">
+                  ** List Name is required!
+                </div>
+      
+              </div>
+
+            
+            <button class="btn btn-lg btn-primary btn-block" type="submit"  [disabled]="!create.form.valid" >Create</button>
+        </form>
+    </div>
+  </div>
+</div>  
